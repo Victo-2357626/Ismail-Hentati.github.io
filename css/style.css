@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+ 
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ 
+h1 {
+    margin: 20px auto;
+    font-size: 40px;
+}
+h2 {
+    margin: 0 auto;
+    font-size: 35px;
+    margin: 10px;
+}
+h3 {
+    margin: 10px auto;
+    font-size: 20px;
+}
+ 
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.flex-column {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+ 
+.flex-wrap {
+    flex-wrap: wrap;
+    height: 432px;
+    width: 432px;
+}
+ 
+.square {
+    border: 2px solid rgba(0, 0, 0, 0.75);
+    height: 140px;
+    width: 140px;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Jaro';
+}
+ 
+#reset-button {
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid black;
+    height: 55px;
+    width: 100px;
+    margin: 10px;
+}
+ 
+dialog {
+    border: none;
+    border-radius: 15px;
+    padding: 0;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 450px;
+}
+ 
+.dialog-content {
+    background-color: white;
+    padding: 20px 15px;
+    border-radius: 15px;
+}
+ 
+.dialog-content h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+ 
+.dialog-content .subtitle {
+    margin: 5px 0 15px 0;
+    font-size: 14px;
+    color: gray;
+    font-style: italic;
+}
+ 
+.megaman-img {
+    width: 100px;
+    height: auto;
+    margin: 15px 0;
+}
+ 
+.dialog-content .author {
+    margin: 10px 0;
+    font-size: 14px;
+}
+ 
+.dialog-content a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+.dialog-content a:hover {
+    text-decoration: underline;
+}
+ 
+.dialog-button {
+    padding: 10px 20px;
+    margin: 10px 5px 0 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+ 
+#disable-dialog {
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-family: jaro, sans-serif;
+    margin: 10px;
+}
+ 
+.dialog-button:hover {
+    background-color: #0056b3;
+}
+ 
+.author-info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 15px;
+}
+ 
+.text-container {
+    text-align: left;
+    margin-right: 15px;
+    font-size: 14px;
+}
+hr{
+    width: 50%;
+    border: 1px solid blue;
+}
+i{
+    font-family: jaro, sans-serif;
+}
+dialog::backdrop {
+    background-color: rgba(38, 162, 245, 0.5);
+    opacity: 0.8;
+}

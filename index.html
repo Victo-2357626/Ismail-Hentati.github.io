@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Voici comment nous lions le CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- Et voici comment nous lions le JavaScript ! -->
+    <script defer src="js/main.js"></script>
+    <!-- Un titre amusant -->
+    <title>Donner du pouvoir au Tic-Tac-Toe pour le bien de l'humanité</title>
+</head>
+<body>
+    <dialog id="project-dialog">
+        <div class="dialog-content">
+            <h1>Projet personnel</h1>
+            <hr>
+            <p class="info">Design web gr.2 - Automne 2024</p>
+            <div class="author-info">
+                <div class="text-container">
+                    <p class="author"><strong>Réalisé par</strong><br><i>Mathieu Fréchette</i></p>
+                    <p><strong>Inspiration<br></strong><a href="https://codesandbox.io/p/sandbox/9jfhk" target="_blank"><i>https://codesandbox.io/p/sandbox/9jfhk</i></a></p>
+                </div>
+                <div class="image-container">
+                    <img src="images/megaman.png" alt="Megaman" class="megaman-img">
+                </div>
+            </div>
+            <button id="close-dialog" class="dialog-button">Fermer la fenêtre</button>
+            <br>
+            <button id="disable-dialog"><i>Ne plus afficher cette fenêtre</i></button>
+        </div>
+    </dialog>
+    <h1>Tic-Tac-Toe</h1>
+    <h2>C'est au tour de X !</h2>
+    <div class="flex-container flex-column">
+        <div class="flex-container flex-wrap" id="board">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+        <button id="reset-button">Réinitialiser</button>
+    </div>
+    <div>
+        <h3>Parties gagnées par X : <span id="XX"></span></h3>
+        <h3>Parties gagnées par O : <span id="OO"></span></h3>
+    </div>
+</body>
+</html>
